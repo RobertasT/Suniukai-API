@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GlobalusDuomenysService } from './globalus-duomenys.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projektas';
+  rodomasMeniu = 1;
+  constructor(private globalusServisas: GlobalusDuomenysService){
+  this.globalusServisas.rodytiMeniu.subscribe(x=>this.rodomasMeniu = x)
+  }
 }

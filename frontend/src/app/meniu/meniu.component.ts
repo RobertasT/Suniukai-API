@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalusDuomenysService } from '../globalus-duomenys.service';
 
 @Component({
   selector: 'app-meniu',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeniuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private globalusServisas: GlobalusDuomenysService) { }
 
   ngOnInit(): void {
+  }
+  antrasMeniu() {
+    this.globalusServisas.rodytiMeniu2()
+
   }
 
 }

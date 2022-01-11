@@ -6,16 +6,15 @@
 
 }
 .meniu {
-
     width: 300px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: lightgray;
+    background-color: rgb(213, 228, 81);
     flex-direction: column;
     height: 100%;
 }
 .meniu img {
+  margin-top: 200px;
     width: 150px;
     margin-bottom: 50px;
 }

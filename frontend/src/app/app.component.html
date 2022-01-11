@@ -1,3 +1,8 @@
-
-<app-meniu></app-meniu>
-<router-outlet></router-outlet>
+<div *ngIf="rodomasMeniu==1 ">
+  <app-meniu></app-meniu>
+  <router-outlet></router-outlet>
+</div>
+<div *ngIf="rodomasMeniu!=1 ">
+  <app-meniu2></app-meniu2>
+  <app-meniu2meniu></app-meniu2meniu>
+</div>
